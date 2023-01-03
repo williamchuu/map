@@ -9,6 +9,7 @@ export default function Map() {
     const position = [49.28594, -123.11129]; // waterfront
 
     const purpleOption = { color: 'purple' };
+    const pinkOption = { color: '#e838d6' };
     const redOption = { color: 'red' };
 
     const polyline = [
@@ -177,7 +178,7 @@ export default function Map() {
                 <Popup>You reached your destination</Popup>
             </CircleMarker>
             <Polyline pathOptions={purpleOption} positions={polyline} />
-            <Polyline pathOptions={purpleOption} positions={polyline2} />
+            <Polyline pathOptions={pinkOption} positions={polyline2} />
         </MapContainer>
     )
 

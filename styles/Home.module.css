@@ -283,10 +283,10 @@
   padding: 0.2rem 0;
   text-align: center;
   font-size: 1.5rem;
-  color: #444b83;
+  color: #1463a7;
   height: 15rem;
   width: 100%;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .subhead {
@@ -316,8 +316,8 @@
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
 }
 
-.boldPurple {
-  color: purple;
+.boldBlue {
+  color: #1a73e8;
 }
 
 .boldPink {

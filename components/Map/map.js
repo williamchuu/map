@@ -6,9 +6,9 @@ import style from '../../styles/Home.module.css'
 import { MapContainer, TileLayer, Marker, Popup, Polyline, CircleMarker } from 'react-leaflet'
 
 export default function Map() {
-    const position = [49.28594, -123.11129]; // waterfront
+    const position = [49.286312103271484, -123.11234283447266]; // waterfront
 
-    const purpleOption = { color: 'purple' };
+    const blueOption = { color: '#1a73e8' };
     const pinkOption = { color: '#e838d6' };
     const redOption = { color: 'red' };
 
@@ -36,7 +36,6 @@ export default function Map() {
     ];
 
     const polyline2 = [
-        [49.201446533203125, -122.9125747680664], //new westminster
         [49.205135345458984, -122.90621948242188], //columbia
         [49.224860238697396, -122.88949270294468], //sapperton
         [49.23268213068468, -122.88456287225554], //braid
@@ -52,132 +51,132 @@ export default function Map() {
             />
             <Marker position={position}>
                 <Popup>
-                    Skytrain <br /> Waterfront
+                    Waterfront
                 </Popup>
             </Marker>
             <Marker position={polyline[1]}>
                 <Popup>
-                    Skytrain <br /> Burrard
+                    Burrard
                 </Popup>
             </Marker>
             <Marker position={polyline[2]}>
                 <Popup>
-                    Skytrain <br /> Grandville
+                    Grandville
                 </Popup>
             </Marker>
             <Marker position={polyline[3]}>
                 <Popup>
-                    Skytrain <br /> Stadium-Chinatown
+                    Stadium-Chinatown
                 </Popup>
             </Marker>
             <Marker position={polyline[4]}>
                 <Popup>
-                    Skytrain <br /> Main Street-Science World
+                    Main Street-Science World
                 </Popup>
             </Marker>
             <Marker position={polyline[5]}>
                 <Popup>
-                    Skytrain <br /> Commercial-Broadway
+                    Commercial-Broadway
                 </Popup>
             </Marker>
             <Marker position={polyline[6]}>
                 <Popup>
-                    Skytrain <br /> Nanaimo
+                    Nanaimo
                 </Popup>
             </Marker>
             <Marker position={polyline[7]}>
                 <Popup>
-                    Skytrain <br /> 29th Avenue
+                    29th Avenue
                 </Popup>
             </Marker>
             <Marker position={polyline[8]}>
                 <Popup>
-                    Skytrain <br /> Joyce-Collingwood
+                    Joyce-Collingwood
                 </Popup>
             </Marker>
             <Marker position={polyline[9]}>
                 <Popup>
-                    Skytrain <br /> Patterson
+                    Patterson
                 </Popup>
 
             </Marker>
             <Marker position={polyline[10]}>
                 <Popup>
 
-                    Skytrain <br /> Metrotown
+                    Metrotown
                 </Popup>
             </Marker>
             <Marker position={polyline[11]}>
                 <Popup>
-                    Skytrain <br /> Royal Oak
+                    Royal Oak
                 </Popup>
             </Marker>
             <Marker position={polyline[12]}>
                 <Popup>
-                    Skytrain <br /> Edmonds
+                    Edmonds
                 </Popup>
             </Marker>
             <Marker position={polyline[13]}>
                 <Popup>
-                    Skytrain <br /> 22nd Street
+                    22nd Street
                 </Popup>
             </Marker>
             <Marker position={polyline[14]}>
                 <Popup>
-                    Skytrain <br /> New Westminster
+                    New Westminster
                 </Popup>
             </Marker>
             <Marker position={polyline[15]}>
                 <Popup>
-                    Skytrain <br /> Columbia
+                    Columbia
                 </Popup>
             </Marker>
             <Marker position={polyline[16]}>
                 <Popup>
-                    Skytrain <br /> Scott Road
+                    Scott Road
                 </Popup>
             </Marker>
             <Marker position={polyline[17]}>
                 <Popup>
-                    Skytrain <br /> Gateway
+                    Gateway
                 </Popup>
             </Marker>
             <Marker position={polyline[18]}>
                 <Popup>
-                    Skytrain <br /> Surrey Central
+                    Surrey Central
                 </Popup>
             </Marker>
             <Marker position={polyline[19]}>
                 <Popup>
-                    Skytrain <br /> King George
+                    King George
                 </Popup>
             </Marker>
 
+            <Marker position={polyline2[1]}>
+                <Popup>
+                    Sapperton
+                </Popup>
+            </Marker>
             <Marker position={polyline2[2]}>
                 <Popup>
-                    Skytrain <br /> Sapperton
+                    Braid
                 </Popup>
             </Marker>
             <Marker position={polyline2[3]}>
                 <Popup>
-                    Skytrain <br /> Braid
+                    Lougheed Town Centre
                 </Popup>
             </Marker>
             <Marker position={polyline2[4]}>
                 <Popup>
-                    Skytrain <br /> Lougheed Town Centre
-                </Popup>
-            </Marker>
-            <Marker position={polyline2[5]}>
-                <Popup>
-                    Skytrain <br /> Production Way-University
+                    Production Way-University
                 </Popup>
             </Marker>
 
-            <CircleMarker center={[49.18256759643555, -122.84412384033203]} pathOptions={redOption} radius={20}>
-                <Popup>You reached your destination</Popup>
-            </CircleMarker>
-            <Polyline pathOptions={purpleOption} positions={polyline} />
+            <CircleMarker center={polyline[0]} pathOptions={redOption} radius={10}></CircleMarker>
+            <CircleMarker center={polyline[19]} pathOptions={redOption} radius={10}></CircleMarker>
+            <CircleMarker center={polyline2[4]} pathOptions={redOption} radius={10}></CircleMarker>
+            <Polyline pathOptions={blueOption} positions={polyline} />
             <Polyline pathOptions={pinkOption} positions={polyline2} />
         </MapContainer>
     )

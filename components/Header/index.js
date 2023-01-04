@@ -6,7 +6,7 @@ export default function Header() {
         <div className={styles.header}>
             <h1>Vancouver Expo Line</h1>
             <h3 className={styles.subhead}>
-                &#128205; Click on the markers to see the station name
+                &#128205; Click on the pins to see the station name
             </h3>
             <p className={styles.legend} >
                 <b className={styles.boldBlue}>Blue</b>: To King George Station <br />

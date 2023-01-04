@@ -295,7 +295,7 @@
   font-size: 1rem;
   color: #292929;
   width: 100%;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .legend {
@@ -308,7 +308,7 @@
 }
 
 .footer {
-  padding: 2rem 0;
+  padding-top: 30px;
   text-align: center;
   font-size: 0.8rem;
   color: #292929;
